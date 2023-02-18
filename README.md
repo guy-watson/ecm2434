@@ -8,12 +8,22 @@
      Web application that uses gamification to
      promote sustainability on campus for people at the University of Exeter
     <br />
-    <a href="https://github.com/guy-watson/ecm2434/blob/main/ideas">Add an idea!</a>
+    <a href="https://github.com/guy-watson/ecm2434/blob/main/ideas.md">Add an idea!</a>
   </p>
   
+# Setup
+
+```bash
+pip3 install django
+```
   
-  
-  
+```
+python3 manage.py migrate
+```
+
+```
+python3 manage.py runserver
+```
   
   
   
