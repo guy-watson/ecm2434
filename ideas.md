@@ -7,6 +7,7 @@
 
 # Kaloyan 
     - Maybe like a learn to earn system with harder quizes giving more points?
+    - Global leaderboard and a friends leaderboard so you can add your friends and compare scores?
 
 # James 
     - Potentailly a system simialr to the app bereal, where randomly in the day, an alert goes off and you then have a set period of time, 
