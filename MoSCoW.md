@@ -2,12 +2,13 @@
 
 ### Must Have
 - Leaderboard
--
--
+- Articles + Quizzes 
+- Points system
+- Login system
 
 ### Should Have
 - Friends Leaderboard
--
+- 
 -
 
 ### Could Have
