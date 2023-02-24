@@ -13,7 +13,7 @@
 
 ### Could Have
 - Weekly and All Time Leadeboard
--
+- Allow signups through social media accounts
 -
 
 ### Will Not Have
