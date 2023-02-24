@@ -1,4 +1,4 @@
-Quiz based on the article on food sustainability:
+## Quiz based on the article on food sustainability:
 
 What is food sustainability?
 a) The production and consumption of food in a manner that is environmentally friendly, socially responsible, and economically viable.
