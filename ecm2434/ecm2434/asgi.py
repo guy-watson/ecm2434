@@ -7,6 +7,7 @@ For more information on this file, see
 https://docs.djangoproject.com/en/dev/howto/deployment/asgi/
 """
 
+# Aurthor: Kaloyan Gaydarov and Taariq Fadhill
 import os
 
 from django.core.asgi import get_asgi_application

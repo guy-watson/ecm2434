@@ -27,8 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
+# Aurthor: Kaloyan Gaydarov and Taariq Fadhill
+
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',

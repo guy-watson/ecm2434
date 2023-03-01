@@ -1,3 +1,4 @@
+# Aurthor: Kaloyan Gaydarov and Taariq Fadhill 
 from django.db import models
 
 class Score(models.Model):
