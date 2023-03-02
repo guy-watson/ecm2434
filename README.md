@@ -29,7 +29,7 @@ python3 manage.py runserver
  # Contributions
  ### Guy Watson -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ecm2434/html">Map Navigation and content display pages</a>    
  ### James White -> <a href="https://github.com/guy-watson/ecm2434/blob/main/create:login">Login system</a>   
- ### Peisi Zheng -> <a href="https://github.com/guy-watson/ecm2434/blob/main">Django implementation</a>   
+ ### Peisi Zheng -> <a href="https://github.com/guy-watson/ecm2434/blob/main/">Django implementation</a>   
  ### Taariq Fadhill -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ecm2434/leaderboard">Leaderboard</a>    
  ### Kaloyan Gaydarov -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ecm2434/leaderboard">Leaderboard</a>   
  ### Max Ward -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ideas.md"></a>   
