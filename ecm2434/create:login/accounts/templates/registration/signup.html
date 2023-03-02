@@ -1,0 +1,91 @@
+<!-- templates/registration/signup.html -->
+{% extends "navbar.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="text-center">Sign Up</h2>
+          </div>
+          <div class="card-body">
+            <form method="post">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <div class="form-group mt-4">
+                <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer text-center">
+            <p class="mb-0">Already have an account?</p>
+            <a href="{% url 'login' %}">Log In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    body {
+      background-color: #455145;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+
+    .card-header {
+      background-color: #00C896;
+      color: #fff;
+      padding: 20px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    form {
+      margin-bottom: 0;
+    }
+
+    button[type="submit"] {
+      background-color: #00C896;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0069d9;
+    }
+
+    .card-footer {
+      background-color: #00C896;
+      padding: 10px 20px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  </style>
+{% endblock %}
+
+
+
+
+
