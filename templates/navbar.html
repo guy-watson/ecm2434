@@ -24,7 +24,12 @@
       </li>
       <li class="nav-item">
         {% if user.is_authenticated %}
-          <a class="nav-link" href="/add_friend/">Profile</a>
+          <a class="nav-link" href="/profile/">Profile</a>
+        {% endif %}
+      </li>
+      <li class="nav-item">
+        {% if user.is_authenticated %}
+          <a class="nav-link" href="/teams/add_member">Teams</a>
         {% endif %}
       </li>
       <li class="nav-item">

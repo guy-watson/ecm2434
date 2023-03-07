@@ -11,3 +11,4 @@ def leaderboard(request):
         'scores': scores
     }
     return HttpResponse(template.render(context, request))
+

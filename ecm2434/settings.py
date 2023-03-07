@@ -32,7 +32,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'leaderboard.apps.LeaderboardConfig',
-    'users.apps.UsersConfig',
+    'prof.apps.ProfConfig',
+    'teams.apps.TeamsConfig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
