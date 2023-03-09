@@ -16,19 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
-from prof.views import AddFriend, AcceptFriend
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("accounts/", include("accounts.urls")),
+    path('', include('accounts.urls')),
     path("accounts/", include("django.contrib.auth.urls")),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    path('profile/', include('prof.urls'), name='profile'),
-    path('profile/add_friend/', AddFriend.as_view(), name='add_friend'),
-    path('profile/accept_friend_request/', AcceptFriend.as_view(), name='accept_friend_request'),
-    path('teams/', include('teams.urls'), name='teams'),
+    path('profile/', include('prof.urls')),
+    path('teams/', include('teams.urls')),
+    path('users/', include('users.urls')),
     path('leaderboard/', include('leaderboard.urls')),
     path('map/', TemplateView.as_view(template_name='map.html'), name='map'),
     path('article_page/', TemplateView.as_view(template_name='article_page.html'), name='articles'),
