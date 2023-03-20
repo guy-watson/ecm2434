@@ -1,0 +1,113 @@
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #003c3c;
+  }
+  
+  form {
+    padding: 20px;
+    background-color: #00C896;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="button"] {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  input[type="button"]:active {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+
+  
+  fieldset {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #00C896;
+  }
+  
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .card {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+  .card-header {
+    background-color: #00C896;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+
+  button[type="submit"] {
+    background-color: #00C896;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+
+  .card-footer {
+    background-color: #00C896;
+    padding: 10px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .custom-navbar {
+background-color: #00C896;
+}
