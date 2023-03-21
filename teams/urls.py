@@ -1,8 +1,8 @@
 # Aurthor: Kaloyan Gaydarov and Taariq Fadhill 
 from django.urls import path
-from .views import add_member, team_detail
+from .views import team_list
 
-app_name = 'teams'
 urlpatterns = [
-    path('add_member/', add_member, name='add_member'),
+    path('', team_list, name='index'),
+    
 ]

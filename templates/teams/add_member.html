@@ -28,12 +28,12 @@
     <div class="container my-4" >
         <div class="p-4 rounded" id="box">
             <form method="post">
-                {% csrf_token %}
                 <label for="team">Select a team:</label>
+                {{ csrf_token}}
                 <select name="team">
-                {% for team in teams %}
-                    <option value="{{ team.id }}">{{ team.name }}</option>
-                {% endfor %}
+                    {% for team in teams %}
+                        <option value="{{ team.id }}">{{ team.name }}</option>
+                    {% endfor %}
                 </select>
                 <br>
                 <button type="submit">Join team</button>

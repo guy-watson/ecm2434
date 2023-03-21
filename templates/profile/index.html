@@ -32,24 +32,19 @@
                 <img src="{{ user_profile.avatar.url }}" alt="{{ user_profile.user.username }}'s avatar" class="img-fluid rounded-circle mx-auto d-block mb-4">
             {% endif %}
             <p class="text-center">Score: {{ score }}</p>
-
-            <h2>Friend Requests</h2>
-            {% if user_profile.friend_requests_received.count > 0 %}
-              <ul>
-                {% for request in user_profile.friend_requests_received.all %}
-                  <li>{{ request.from_user.username }} <form method="post" action="{% url 'add_friend' %}">{% csrf_token %}
-                      <input type="hidden" name="from_user_id" value="{{ request.from_user.id }}">
-                      <button type="submit">Accept</button>
-                    </form></li>
-                {% endfor %}
-              </ul>
+            
+              <h2>Friend Requests</h2>
+              {% if request.user.userprofile.friends.all %}
+              {% for friend in request.user.userprofile.friends.all|dictsort:"username" %}
+                {{ friend.username }}
+              {% endfor %}
             {% else %}
-              <p>No friend requests</p>
+              <p>No friends yet!</p>
             {% endif %}
           
             <h2>Add Friend</h2>
-            <form method="post" action="{% url 'add_friend' %}">
-              {% csrf_token %}
+            <form method="POST" action="{% url 'add_friend' user_id=user.id %}">
+            {% csrf_token %}
               <label for="username">Username:</label>
               <input type="text" id="username" name="username">
               <button type="submit">Add Friend</button>

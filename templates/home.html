@@ -8,25 +8,25 @@
   <div class="container">
     <div class="row justify-content-center mt-5">
       <div class="col-md-6">
-        {% if user.is_authenticated %}
           <div class="card">
             <div class="card-body">
+              {% if user.is_authenticated %}
               Hi {{ user.username }}!
               <p><a href="{% url 'logout' %}" class="button">Log Out</a></p>
-            </div>
-          </div>
-        {% else %}
-          <div class="card">
-            <div class="card-body">
+              {% else %}
               <p>You are not logged in</p>
               <a href="{% url 'login' %}" class="button primary">Log In</a>
               <a href="{% url 'signup' %}" class="button secondary">Sign Up</a>
+              {% endif %}
+              <p>
+                About this website
+              </p>
             </div>
           </div>
-        {% endif %}
       </div>
     </div>
   </div>
+  
   <style>
     body {
       background-color: #455145;
@@ -46,6 +46,7 @@
 
     .card-body {
       padding: 20px;
+      text-align: center;
     }
 
     .button {
