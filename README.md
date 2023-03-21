@@ -18,8 +18,7 @@ pip3 install django
 ```
 
 ```
-pip3 install django-friendship  
-
+pip3 install django-friendship
 ```
   
 ```
