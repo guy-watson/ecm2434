@@ -16,6 +16,11 @@
 ```bash
 pip3 install django
 ```
+
+```
+pip3 install django-friendship  
+
+```
   
 ```
 python3 manage.py migrate
