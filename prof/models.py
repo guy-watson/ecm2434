@@ -28,18 +28,23 @@ class User(AbstractUser):
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     friends = models.ManyToManyField(User, related_name='friends', blank=True)
+    id = models.AutoField(primary_key=True)
 
     def __str__(self):
         return self.user.username
 
 class FriendRequest(models.Model):
-    from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='friend_requests_sent')
-    to_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='friend_requests_received')
+    from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='from_user')
+    to_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='to_user')
     is_accepted = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    
+
     def __str__(self):
-        return f"{self.from_user.username} sent a friend request to {self.to_user.username}"
+        return self.from_user.username
     
     class Meta:
         unique_together = ('from_user', 'to_user')
+
+        
+    
+
+        
