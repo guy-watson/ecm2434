@@ -27,20 +27,20 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'leaderboard.apps.LeaderboardConfig',
+    'accounts.apps.AccountsConfig',
+    'prof.apps.ProfConfig',
+    'teams.apps.TeamsConfig',
+    "friendship",
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
-    'leaderboard.apps.LeaderboardConfig',
-
-   
 ]
 
 MIDDLEWARE = [
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'TEEM.urls'
+ROOT_URLCONF = 'ecm2434.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'TEEM.wsgi.application'
+WSGI_APPLICATION = 'ecm2434.wsgi.application'
 
 
 # Database
