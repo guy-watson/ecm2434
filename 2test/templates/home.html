@@ -1,0 +1,32 @@
+{% extends 'navbar.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        {% if user.is_authenticated %}
+          <div class="card">
+            <div class="card-body">
+              Hi {{ user.username }}!
+		<br> Please navigate to the about page where you can learn more about the app!
+              <p><a href="{% url 'logout' %}" class="button">Log Out</a></p>
+            </div>
+          </div>
+        {% else %}
+          <div class="card">
+            <div class="card-body">
+              <h5>You are currently not logged in</h5>
+		<p><br> Please login or create an account below<p>
+            </div>
+            <div class="card-footer">
+              <a href="{% url 'login' %}" class="button primary">Log In</a>
+              <a href="{% url 'signup' %}" class="button secondary">Sign Up</a>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
