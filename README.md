@@ -39,7 +39,7 @@ These instructions will allow you to set up the project for development and test
 ## Prerequisites <a name="preq"></a>
 This section includes the software you will need to run the app and how to install it.
 
-[Python](https://www.python.org/) You can download this from the website.
+[Python](https://www.python.org/) you can download this from the website.
 
 Pyzbar
 ```bash
@@ -49,6 +49,15 @@ OpenCV
 ```bash
 pip3 install opencv-python-headless```
 ```
+## Installation <a name="installation"></a>
+Here is a step by step on how to get the developement enviroment working.
+
+
+
+
+
+
+
 
 ## Getting Started <a name="start"></a>
 ## Getting Started <a name="start"></a>
