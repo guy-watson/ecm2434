@@ -47,15 +47,30 @@ pip3 install pyzbar
 ```
 OpenCV
 ```bash
-pip3 install opencv-python-headless```
+pip3 install opencv-python-headless
 ```
 ## Installation <a name="installation"></a>
 Here is a step by step on how to get the developement enviroment working.
 
 
+1. Clone the repository:
+```bash
+git clone https://github.com/guy-watson/ecm2434-Group-26/
+```
 
+2. Change into the project directory:
+```bash
+cd ecm2434-Group-26/ *******
+```
 
+3. Create a virtual environment:
+```bash
+python3 -m venv env```
 
+4. Activate the virtual environment:
+```bash
+source env/bin/activate # on Linux/MacOS
+env\Scripts\activate.bat # on Windows ```
 
 
 
