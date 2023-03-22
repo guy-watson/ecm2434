@@ -1,0 +1,90 @@
+<!-- templates/home.html -->
+{% extends 'navbar.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        {% if user.is_authenticated %}
+          <div class="card">
+            <div class="card-body">
+              Hi {{ user.username }}!
+              <p><a href="{% url 'logout' %}" class="button">Log Out</a></p>
+            </div>
+          </div>
+        {% else %}
+          <div class="card">
+            <div class="card-body">
+              <p>You are not logged in</p>
+              <a href="{% url 'login' %}" class="button primary">Log In</a>
+              <a href="{% url 'signup' %}" class="button secondary">Sign Up</a>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      <h1>What we are about! </h1>
+      <p>This site is intended to educate University of Exeter students on their effect on our local and global environment. With engaging articles and quizzes, you will be able to put your knowledge to the test to gain points and compete against your friends for who is the most aware of their impact on the world around them!</p>
+      <h2><b>How do I play?</b></h2>
+      <p>It's simple! Just sign up and start reading articles and taking quizzes. You will be able to see your progress on the leaderboard and compete against your friends to see who has the highest level of knowledge about sustainability on campus!</p>
+      <h2><b>How do I earn points?</b></h2>
+      <p>For every article you read, you will earn 10 points. For every quiz you take, you will earn 20 points. For every quiz you pass, you will earn 50 points.</p>
+      <h2>A link to our privacy policy can be found <a href="privacy-policy">here</a></h2>
+    </div>
+  </div>
+  <style>
+    body {
+      background-color: #455145;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 15px;
+      border-radius: 3px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .primary {
+      background-color: #00C896;
+      color: #fff;
+      border: none;
+    }
+
+    .primary:hover {
+      background-color: #0069d9;
+    }
+
+    .secondary {
+      background-color: #6c757d;
+      color: #fff;
+      border: none;
+    }
+
+    .secondary:hover {
+      background-color: #5a6268;
+    }
+  </style>
+{% endblock %}
