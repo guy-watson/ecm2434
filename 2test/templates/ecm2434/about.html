@@ -4,11 +4,39 @@
 
 {% block content %}
 
+{% block css %}
+<style>
+    input[type="submit"] {
+        background-color: white;
+        color: black;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: darkgray;
+    }
+
+    input[type="file"]::-webkit-file-upload-button {
+        background-color: white;
+        color: black;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+{% endblock %}
+
   <div class="container mt-5">
     <div class="row">
       <div class="col-12">
         <div class="bg-white p-4 rounded shadow-sm">
-          <h1 class="display-4 mb-4">About Us</h1>
+          <h1 class="display-4 mb-4">Play Now!</h1>
           <p class="lead">Welcome to our game!</p>
           <p>
             Here, you can learn more about the game, its rules, and the people behind it. We are a team of passionate developers and designers who love creating fun and engaging experiences for our players.
@@ -25,5 +53,15 @@
         </div>
       </div>
     </div>
+    
   </div>
+
+  <form method="POST" enctype="multipart/form-data" class="text-center mt-5">
+    {% csrf_token %}
+    <label>
+        <input type="file" name="image" class="btn btn-primary">
+    </label>
+    <br>
+    <input type="submit" value="Scan QR Code" class="btn btn-primary">
+</form>
 {% endblock %}
