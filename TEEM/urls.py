@@ -26,4 +26,5 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('qr_code_scanner/', include('qr_code_scanner.urls')),
     path('qr_code_result/', TemplateView.as_view(template_name='qr_code_result.html'), name='qr_code_result'),
+    path('privacy-policy', TemplateView.as_view(template_name='privacy-policy.html'), name='privacy-policy'),
 ]
