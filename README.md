@@ -19,44 +19,54 @@ Our app is designed to be user-friendly and accessible, with a modern and intuit
 
 ## Table of Contents
 - [Getting Started](#start)
+- [Built With](#build)
 - [Prerequisites](#preq)
 - [Installation](#installation)
-- [Built With](#build)
+- [Testing](#test)
 - [Contributing](#contributing)
 - [License](#license)
 
 
 ## Getting Started <a name="start"></a>
+These instructions will allow you to set up the project for development and testing on your local machine.
 
+## Built With <a name="build"></a>
+- Django
+- Bootstrap
+- SQL
+- Python
 
+## Prerequisites <a name="preq"></a>
+This section includes the software you will need to run the app and how to install it.
 
+[Python](https://www.python.org/) You can download this from the website.
 
-
-
+Pyzbar
+```bash
+pip3 install pyzbar
+```
+OpenCV
+```bash
+pip3 install opencv-python-headless```
+```
 
 ## Getting Started <a name="start"></a>
 ## Getting Started <a name="start"></a>
 ## Getting Started <a name="start"></a>
 ## Getting Started <a name="start"></a>
-## Getting Started <a name="start"></a>
 
 
-
-
-
-
-
+Django
 ```bash
 pip3 install django
 ```
   
-```
-python3 manage.py migrate
-```
 
-```
-python3 manage.py runserver
-```
+
+
+
+
+
   
   
  # Contributions
