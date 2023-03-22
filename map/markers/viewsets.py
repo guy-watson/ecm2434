@@ -6,7 +6,7 @@ from markers.serializers import MarkerSerializer
 
 
 class MarkerViewSet(viewsets.ReadOnlyModelViewSet):
-    bbox_filter_field = "location"
+    bbox_filter_field = 'location'
     filter_backends = (filters.InBBoxFilter,)
     queryset = Marker.objects.all()
     serializer_class = MarkerSerializer

@@ -5,6 +5,6 @@ from markers.models import Marker
 
 class MarkerSerializer(serializers.GeoFeatureModelSerializer):
     class Meta:
-        fields = ("id", "name")
-        geo_field = "location"
+        fields = ('id', 'name')
+        geo_field = 'location'
         model = Marker
