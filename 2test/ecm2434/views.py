@@ -10,6 +10,9 @@ from django.shortcuts import render, redirect
 def about(request):
     return render(request, 'ecm2434/about.html')
 
+def priv_pol(request):
+    return render(request, 'ecm2434/privacy-policy.html')
+
 
 @login_required
 def article_one(request):
