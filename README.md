@@ -37,7 +37,7 @@ These instructions will allow you to set up the project for development and test
 - Python
 
 ## Prerequisites <a name="preq"></a>
-This section includes the software you will need to run the app and how to install it.
+This section includes the software you will need to run the app and how to install it. You will need to install these in the virtual enviroment you are working in.
 
 [Python](https://www.python.org/) you can download this from the website.
 
@@ -65,14 +65,28 @@ cd ecm2434-Group-26/ *******
 
 3. Create a virtual environment:
 ```bash
-python3 -m venv env```
+python3 -m venv env
+```
 
 4. Activate the virtual environment:
 ```bash
 source env/bin/activate # on Linux/MacOS
-env\Scripts\activate.bat # on Windows ```
+env\Scripts\activate.bat # on Windows 
+```
 
+5. Install dependencies:
+```bash
+pip3 install Django
+pip3 install opencv-python-headless
+pip3 install pyzbar
+```
 
+6. Run migrations:
+```bash
+python3 manage.py migrate
+```
+
+7. Create a superuser. You can login into the site as superuser and then into django admin interface where you can edit the questions and answers for the quizzes.
 
 ## Getting Started <a name="start"></a>
 ## Getting Started <a name="start"></a>
