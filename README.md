@@ -88,22 +88,25 @@ python3 manage.py migrate
 
 7. Create a superuser. You can login into the site as superuser and then into django admin interface where you can edit the questions and answers for the quizzes.
 ```bash
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 8. Run the development server:
 ```bash
-python manage.py runserver
+py manage.py runserver
 ```
 At this point you can copy the provided url into your browser to access the website.
 
 To reset the database:
 ```bash
-python manage.py flush
+python3 manage.py flush
 ```
 
 ## Testing <a name="test"></a>
-idk yet
+To run the inbuilt tests input the following command when in the working directory:
+```bash
+python3 manage.py test
+```
 
 
 
