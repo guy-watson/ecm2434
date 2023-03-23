@@ -97,6 +97,11 @@ python manage.py runserver
 ```
 At this point you can copy the provided url into your browser to access the website.
 
+To reset the database:
+```bash
+python manage.py flush
+```
+
 ## Testing <a name="test"></a>
 idk yet
 
