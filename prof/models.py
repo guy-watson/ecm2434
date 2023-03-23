@@ -2,10 +2,10 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.models import Group, Permission
+from django.contrib.auth.models import User
 
-class User(AbstractUser):
-    # custom fields and methods here
-
+# Create a user profile model for the groups and permissions
+class UserProf(AbstractUser):
     groups = models.ManyToManyField(
         Group,
         verbose_name=('groups'),
@@ -25,21 +25,15 @@ class User(AbstractUser):
     )
 
 
+# Create a user profile model
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    friends = models.ManyToManyField(User, related_name='friends', blank=True)
 
     def __str__(self):
         return self.user.username
 
-class FriendRequest(models.Model):
-    from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='friend_requests_sent')
-    to_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='friend_requests_received')
-    is_accepted = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
+
+        
     
-    def __str__(self):
-        return f"{self.from_user.username} sent a friend request to {self.to_user.username}"
-    
-    class Meta:
-        unique_together = ('from_user', 'to_user')
+
+        
