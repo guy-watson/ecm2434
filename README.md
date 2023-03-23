@@ -60,7 +60,7 @@ git clone https://github.com/guy-watson/ecm2434-Group-26/
 
 2. Change into the project directory:
 ```bash
-cd ecm2434-Group-26/ *******
+cd ecm2434-Group-26/(directory_name)
 ```
 
 3. Create a virtual environment:
@@ -111,13 +111,15 @@ python3 manage.py test
 
 
  
- # Contributions <a name="contributing"></a>
+ # Initial Contributions <a name="contributing"></a>
  ### Guy Watson -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ecm2434/html">Map Navigation and content display pages</a>    
  ### James White -> <a href="https://github.com/guy-watson/ecm2434/blob/main/create:login">Login system</a>   
  ### Peisi Zheng -> <a href="https://github.com/guy-watson/ecm2434/">Django implementation</a>   
  ### Taariq Fadhill -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ecm2434/leaderboard">Leaderboard</a>    
  ### Kaloyan Gaydarov -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ecm2434/leaderboard">Leaderboard</a>   
  ### Max Ward -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ideas.md"></a>   
+ 
+ The rest of the details of our contributions are found in the workload unit file and the trello page.
   
 # License<a name="license"></a>
   MIT License
