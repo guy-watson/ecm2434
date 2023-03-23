@@ -20,7 +20,15 @@ pip3 install django
 ```
 pip3 install django-friendship
 ```
-  
+
+```
+pip install opencv-python
+```
+
+```
+pip install pyzbar
+```
+
 ```
 python3 manage.py migrate
 ```
