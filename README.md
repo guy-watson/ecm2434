@@ -87,27 +87,23 @@ python3 manage.py migrate
 ```
 
 7. Create a superuser. You can login into the site as superuser and then into django admin interface where you can edit the questions and answers for the quizzes.
-
-## Getting Started <a name="start"></a>
-## Getting Started <a name="start"></a>
-## Getting Started <a name="start"></a>
-## Getting Started <a name="start"></a>
-
-
-Django
 ```bash
-pip3 install django
+python manage.py createsuperuser
 ```
-  
+
+8. Run the development server:
+```bash
+python manage.py runserver
+```
+At this point you can copy the provided url into your browser to access the website.
+
+## Testing <a name="test"></a>
+idk yet
 
 
 
-
-
-
-  
-  
- # Contributions
+ 
+ # Contributions <a name="contributing"></a>
  ### Guy Watson -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ecm2434/html">Map Navigation and content display pages</a>    
  ### James White -> <a href="https://github.com/guy-watson/ecm2434/blob/main/create:login">Login system</a>   
  ### Peisi Zheng -> <a href="https://github.com/guy-watson/ecm2434/">Django implementation</a>   
@@ -115,8 +111,8 @@ pip3 install django
  ### Kaloyan Gaydarov -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ecm2434/leaderboard">Leaderboard</a>   
  ### Max Ward -> <a href="https://github.com/guy-watson/ecm2434/blob/main/ideas.md"></a>   
   
-  
-  
+# License<a name="license"></a>
+  MIT
   
 [contributors-shield]: https://img.shields.io/github/contributors/guy-watson/ecm2434.svg?style=for-the-badge
 [contributors-url]: https://github.com/guy-watson/ecm2434/graphs/contributors
