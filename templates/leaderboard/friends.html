@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- Aurthor: Kaloyan Gaydarov and Taariq Fadhill -->
+<!-- Aurthor: Kaloyan Gaydarov -->
 <head>
     <title>Leaderboard</title>
     <meta charset="utf-8">
@@ -97,14 +97,12 @@
 </div>
 {% else %}
     <!-- Can change between Global and Friends leaderboard-->
-        <div class="container text-center mt-5">
-            <a href="{% url 'index' %}" class="button primary">Global Leaderboard</a>
-            <a href="{% url 'friend' %}" class="button secondary">Friends Leaderboard</a>
+    <div class="container text-center mt-5">
+            <a href="{% url 'index' %}" class="button secondary">Global Leaderboard</a>
+            <a href="{% url 'friend' %}" class="button primary">Friends Leaderboard</a>
         </div>
-
-    <!-- Displays the leaderboard-->
     <div class="container mt-5">
-        <h1 class="display-4 text-center mb-5"><b>Global Leaderboard</b></h1>
+        <h1 class="display-4 text-center mb-5"><b>Friends Leaderboard</b></h1>
         <table class="table">
             <thead>
                 <tr>
@@ -114,8 +112,8 @@
                 </tr>
             </thead>
             <tbody>
+                {% load friendshiptags %}
                 {% for score in scores %}
-
                 <tr>
                     <td scope="row">{{ forloop.counter }}</td>
                     <td>{{ score.player_name }}</td>
